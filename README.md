@@ -1,10 +1,20 @@
 # Certified Workflow Conversion
 
-`certified-workflow-conversion` (`cwc`) is a local-first Python toolkit for
-improving AI agent pipelines without changing the model. It treats an agent
-deployment as a workflow conversion network: candidates become usable value only
-after generation, tool execution, validation, review, authorization, memory
-governance, release, rollback, and incident handling.
+Certified Workflow Conversion is an evidence-bound, fail-closed Python toolkit
+for diagnosing bottlenecks and reporting conservative lower-bound throughput in
+long-running AI agent workflows.
+
+Use it for:
+
+- agent pipeline bottleneck diagnosis;
+- validation, release, and rollback capacity analysis;
+- evidence-bound certified lower-bound reporting.
+
+`certified-workflow-conversion` (`cwc`) improves AI agent pipelines without
+changing the model. It treats an agent deployment as a workflow conversion
+network: candidates become usable value only after generation, tool execution,
+validation, review, authorization, memory governance, release, rollback, and
+incident handling.
 
 CWC answers a narrow operational question:
 
