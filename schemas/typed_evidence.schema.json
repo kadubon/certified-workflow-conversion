@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cwc:schema:typed-evidence:0.1",
+  "type": "object",
+  "required": ["kind", "scope", "source", "payload"],
+  "properties": {
+    "kind": {"type": "string", "minLength": 1},
+    "scope": {"type": "string", "minLength": 1},
+    "source": {"type": "string", "minLength": 1},
+    "payload": {"type": "object"},
+    "status": {
+      "type": "string",
+      "enum": ["active", "expired", "quarantined", "superseded", "policy_reserve"]
+    },
+    "root_refs": {"type": "array", "items": {"type": "string"}},
+    "external_refs": {"type": "array", "items": {"type": "string"}},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "confidence_microunits": {"type": "integer", "minimum": 0},
+    "tcb_requirements": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

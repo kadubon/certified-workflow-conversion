@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cwc:schema:evidence-contract:0.1",
+  "type": "object",
+  "required": ["contract_id", "type", "target", "checker", "exposes"],
+  "properties": {
+    "contract_id": {"type": "string", "pattern": "^ctr_"},
+    "type": {
+      "type": "string",
+      "enum": ["constraint", "charge", "gate", "reservation", "nonempty", "report"]
+    },
+    "target": {"type": "string"},
+    "scope": {"type": "object"},
+    "assumptions": {"type": "object"},
+    "estimator": {"type": "string"},
+    "checker": {"type": "string"},
+    "tcb": {"type": "array", "items": {"type": "string"}},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "budget_microunits": {"type": "integer", "minimum": 0},
+    "compose": {
+      "type": "string",
+      "enum": [
+        "union",
+        "split",
+        "eprocess",
+        "simultaneous",
+        "time_uniform",
+        "uniform",
+        "deterministic"
+      ]
+    },
+    "exposes": {
+      "type": "string",
+      "pattern": "^[^,]+$",
+      "description": "Exactly one claim-facing report term, such as edge.capacity:<edge_id>, statistical_lower, or goodhart_charge."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "expired", "quarantined", "superseded", "policy_reserve"]
+    }
+  },
+  "additionalProperties": false
+}

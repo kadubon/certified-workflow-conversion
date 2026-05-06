@@ -1,0 +1,3 @@
+{"kind":"validation","scope":"coding-demo","source":"local-pytest","payload":{"tests_passed":true,"cases":12}}
+{"kind":"review","scope":"coding-demo","source":"local-review","payload":{"reviewed":true,"blocking_findings":0}}
+{"kind":"tcb","scope":"coding-demo","source":"local","payload":{"name":"local-runner","status":"ok","rooted":true}}

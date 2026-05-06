@@ -1,0 +1,25 @@
+{
+  "name": "coding-agent-pipeline",
+  "nodes": ["proposal", "validated", "reviewed", "released"],
+  "edges": [
+    {
+      "name": "test validation",
+      "from_node": "proposal",
+      "to_node": "validated",
+      "capacity": 6
+    },
+    {
+      "name": "human review",
+      "from_node": "validated",
+      "to_node": "reviewed",
+      "capacity": 3
+    },
+    {
+      "name": "release approval",
+      "from_node": "reviewed",
+      "to_node": "released",
+      "capacity": 4
+    }
+  ]
+}
+
