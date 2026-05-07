@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use Certified Workflow Conversion, please cite the Zenodo research snapshot."
+title: "kadubon/certified-workflow-conversion: v0.1.0-research - Research Snapshot of Certified Workflow Conversion (v0.1.0)"
+authors:
+  - family-names: "Takahashi"
+    given-names: "K."
+version: "v0.1.0-research"
+doi: "10.5281/zenodo.20060372"
+date-released: "2026-05-07"
+url: "https://github.com/kadubon/certified-workflow-conversion"
+repository-code: "https://github.com/kadubon/certified-workflow-conversion"
+license: "Apache-2.0"
+keywords:
+  - "AI agents"
+  - "workflow verification"
+  - "certified throughput"
+  - "evidence-bound reporting"
+  - "bottleneck analysis"
+  - "fail-closed systems"
+  - "long-running agents"
+abstract: >-
+  Certified Workflow Conversion is an evidence-bound, fail-closed Python toolkit
+  for diagnosing bottlenecks and reporting conservative lower-bound throughput in
+  long-running AI agent workflows. It does not certify factual truth, model
+  intelligence, or production safety; it reports procedural admissibility under
+  declared evidence, contracts, witnesses, and checks.
+preferred-citation:
+  type: software
+  title: "kadubon/certified-workflow-conversion: v0.1.0-research - Research Snapshot of Certified Workflow Conversion (v0.1.0)"
+  authors:
+    - family-names: "Takahashi"
+      given-names: "K."
+  year: 2026
+  version: "v0.1.0"
+  doi: "10.5281/zenodo.20060372"
+  url: "https://doi.org/10.5281/zenodo.20060372"
+  publisher:
+    name: "Zenodo"
